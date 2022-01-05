@@ -42,7 +42,6 @@ body{
 #navbar{
     position: fixed;
     top: 0;
-    left: 0;
     background: rgba($color: rgb(250, 248, 248), $alpha: 0.8);
     padding:0 2em;
 
@@ -189,6 +188,7 @@ body{
 
 #welcome-section{
     height: 100vh;
+    min-height: 500px;
     margin-top: 10%;
     display: flex;
     flex-direction: row;
@@ -499,6 +499,8 @@ body{
         align-items: center;
     }
 
+    
+
     #nav2{
         display: none;
         position: absolute;
@@ -507,6 +509,20 @@ body{
         top: 0;
         color: white;
         height: 100vh;
+        z-index: 9999;
+        width: 80%;
+
+        #exitContainer{
+        display: block;
+        position:absolute;
+        left: -25%;
+        top: 0;
+        background: rgba(61, 61, 61, 0.7);
+        width: 25%;
+        height: 100vh;
+        z-index:1;
+    }
+
         ul{
             flex-direction: column !important;
             margin-top: 2em;
