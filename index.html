@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
-
+    <script src="burger-exit.js"></script>
 </head>
 
 <body>
@@ -19,11 +19,12 @@
                 src="https://lh3.googleusercontent.com/-7JmMQT1a4QZXKztaFobnyfwmYd0Ijm7KZgNevNOUd3wl9vasP3LWd0eV5MX5MU2ZPnsfXne7hrklcPz3ZOeZChknN0UvNRAsLnPt0z3vgm31MpYI-inP9p_YjuiuetvpwpiHAAVQw=w2400"
                 alt="logo"></a>
         <nav class="nav2" id="nav2">
+            <div id="exitContainer"></div>
             <i class="fas fa-times" id="exit"></i>
             <ul class="first-ul">
-                <li><a href="#about">About</a></li>
+                <li id="hello"><a  href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li id="li-social"><a class="__socials" href="#">Socials<i class="fas fa-caret-down"></i></a>
+                <li id="li-social"><a href="#">Socials<i class="fas fa-caret-down"></i></a>
                     <div class="__submenu">
                         <ul>
                             <li><a href="https://web.facebook.com/johnglenn.andwade" target="_blank"><i
@@ -120,28 +121,12 @@
             </div>
         </div>
     </section>
-
-    <section id="contact">
-        <h1 class="contact-h1">CONTACT</h1>
-        <div>
-            
-        </div>
+<center>
+    <section style="margin-bottom:3em; font-size:2em; color: #1b1b1b">
+        <h2>2022 JUST STARTED THERE IS MORE TO COME</h2>
+        <h3>ATLEAST, FOR ME</h3>
     </section>
-    <script>
-        let openLinks = document.getElementById("burger");
-        let links = document.getElementById("nav2");
-        let exit = document.getElementById("exit");
-        let exit2 = document.getElementById("exitContainer");
-        openLinks.addEventListener('click', () => {
-            links.classList.add("showLinks");
-        });
-        exit.addEventListener('click', () => {
-            links.classList.remove("showLinks");
-        });
-        exit2.addEventListener('click', () => {
-            links.classList.remove("showLinks");
-        });
-    </script>
+</center>
 
 </body>
 
