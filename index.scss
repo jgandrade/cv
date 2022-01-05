@@ -499,8 +499,6 @@ body{
         align-items: center;
     }
 
-    
-
     #nav2{
         display: none;
         position: absolute;
@@ -511,21 +509,34 @@ body{
         height: 100vh;
         z-index: 9999;
         width: 80%;
+        opacity: 0;
+        animation: showBurgerMenu 0.3s ease forwards;
 
+        @keyframes showBurgerMenu {
+            0%{
+                opacity: 0;
+                transform: translate(50px,0);
+            }
+            100%{
+                opacity: 1;
+                transform: translate(0,0);
+            }
+        }
         #exitContainer{
         display: block;
-        position:absolute;
-        left: -25%;
+        position:fixed;
+        left: -50%;
         top: 0;
         background: rgba(61, 61, 61, 0.7);
-        width: 25%;
+        width: 50%;
         height: 100vh;
         z-index:1;
     }
 
         ul{
             flex-direction: column !important;
-            margin-top: 2em;
+       
+           margin: 2em auto;
             font-size: 2em;
             #li-social{
                 display: none;
