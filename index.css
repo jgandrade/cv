@@ -608,7 +608,7 @@ body .tip {
 #welcome-section .__heroimg {
   width: 30%;
   max-width: 409px;
-  min-width: 200px;
+  min-width: 300px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -777,6 +777,7 @@ body .tip {
   }
   #burger {
     display: block !important;
+    font-size: 1.5em;
   }
   #exit {
     display: block !important;
@@ -795,6 +796,7 @@ body .tip {
     display: none;
   }
   #welcome-section {
+    font-size: 0.8em;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -823,8 +825,8 @@ body .tip {
     }
     100% {
       opacity: 1;
-      -webkit-transform: translate(-70px, 0) rotate(20deg);
-              transform: translate(-70px, 0) rotate(20deg);
+      -webkit-transform: translate(-35px, 0) rotate(20deg);
+              transform: translate(-35px, 0) rotate(20deg);
     }
   }
   @keyframes jumpin3 {
@@ -844,9 +846,14 @@ body .tip {
     }
     100% {
       opacity: 1;
-      -webkit-transform: translate(-70px, 0) rotate(20deg);
-              transform: translate(-70px, 0) rotate(20deg);
+      -webkit-transform: translate(-35px, 0) rotate(20deg);
+              transform: translate(-35px, 0) rotate(20deg);
     }
+  }
+  #welcome-section .__heroimg {
+    width: 300px;
+    min-width: 300px;
+    max-width: 100vw;
   }
   #about {
     -webkit-box-orient: vertical;
