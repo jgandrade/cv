@@ -59,7 +59,6 @@ body .tip {
 #navbar {
   position: fixed;
   top: 0;
-  left: 0;
   background: rgba(250, 248, 248, 0.8);
   padding: 0 2em;
   z-index: 100;
@@ -272,6 +271,7 @@ body .tip {
 
 #welcome-section {
   height: 100vh;
+  min-height: 500px;
   margin-top: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -882,6 +882,18 @@ body .tip {
     top: 0;
     color: white;
     height: 100vh;
+    z-index: 9999;
+    width: 80%;
+  }
+  #nav2 #exitContainer {
+    display: block;
+    position: absolute;
+    left: -25%;
+    top: 0;
+    background: rgba(61, 61, 61, 0.7);
+    width: 25%;
+    height: 100vh;
+    z-index: 1;
   }
   #nav2 ul {
     -webkit-box-orient: vertical !important;
