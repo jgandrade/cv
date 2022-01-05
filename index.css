@@ -727,6 +727,7 @@ body .tip {
   background: #252738;
   width: 80%;
   height: 100%;
+  min-width: 300px;
 }
 
 #projects .project-tile .project1, #projects .project-tile .project2 {
@@ -867,12 +868,18 @@ body .tip {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: space-around;
+        -ms-flex-align: space-around;
+            align-items: space-around;
+    height: 100%;
+    width: 100%;
+  }
+  #projects .project-tile {
+    margin-top: 2em;
+    width: 300px;
+    min-width: 300px;
   }
   #nav2 {
     display: none;
