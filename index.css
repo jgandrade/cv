@@ -777,7 +777,6 @@ body .tip {
   }
   #burger {
     display: block !important;
-    font-size: 1.5em;
   }
   #exit {
     display: block !important;
@@ -897,7 +896,7 @@ body .tip {
     color: white;
     height: 100vh;
     z-index: 9999;
-    width: 80%;
+    width: 80vw !important;
     opacity: 0;
     -webkit-animation: showBurgerMenu 0.3s ease forwards;
             animation: showBurgerMenu 0.3s ease forwards;
@@ -943,9 +942,14 @@ body .tip {
             flex-direction: column !important;
     margin: 2em auto;
     font-size: 2em;
+    width: 0px !important;
   }
   #nav2 ul #li-social {
     display: none;
+  }
+  #nav2 ul li {
+    width: 150px;
+    text-align: center;
   }
   #nav2 ul .social-hidden {
     display: block !important;
